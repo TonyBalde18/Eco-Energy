@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eco Energy Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="images/ecoenergylogo.ico">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="header-logos">
+            <!-- School Logo -->
+            <img src="images/logocampos.png" alt="School Logo" class="school-logo">
+            <!-- Project Title -->
+            <span class="header-title">Eco Energy</span>
+            <!-- Project Logo -->
+            <img src="images/ecoenergy_logo.png" alt="Eco Energy Logo" class="project-logo">
+        </div>
+
+    </div>
+
+    <h2 class="section-title">Monitorização inteligente de consumo de energia com IoT
+    </h2>
+
+    <!-- Dashboard Content -->
+    <div class="dashboard">
+        <!-- Field Values Box -->
+        <div class="summary" id="dailyAverageSummary">
+            <div>Sensor 1: <span id="dailyAvgField1">-</span> A</div>
+            <div>Sensor 2: <span id="dailyAvgField2">-</span> A</div>
+        </div>
+
+        <div class="main-content">
+            <!-- Chart in Center -->
+            <div class="chart-container">
+                <canvas id="energyChart"></canvas>
+            </div>
+            <!-- Data Table Below Chart -->
+            <div class="data-container">
+                <h3 style="margin-bottom: 10px;">📊 Dados em tempo real</h3>
+                <div id="currentValue" style="font-size: 1.1em; margin: 12px 0;"></div>
+                <h4>📅 Leituras Recentes</h4>
+                <table id="readingsTable">
+                    <thead>
+                        <tr>
+                            <th>Hora</th>
+                            <th>Sensor 1 (A)</th>
+                            <th>Sensor 2 (A)</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <h4 style="margin-top:20px;">📆 Médias Diárias (Últimos 7 Dias)</h4>
+                <table id="dailyAveragesTable">
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Sensor 1 Média (A)</th>
+                            <th>Sensor 2 Média (A)</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-info">
+            <h3>Informação de contacto</h3>
+            <address>
+                Escola Secundária Campos Melo<br>
+                <a href="mailto:a23741@camposmelo.pt">a23741@camposmelo.pt // a23485@camposmelo.pt</a><br>
+                <a href="tel:+351275310880"> +351 275 310 880</a>
+            </address>
+            <div class="contact-social">
+                <a href="https://www.camposmelo.pt/" target="_blank" title="Site" aria-label="Site">🌐</a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="footer-images">
+            <img src="images/financiamento.png" alt="Footer Logo" class="footer-logo">
+            <img src="images/images.png" alt="Footer Logo" class="footer-logo">
+        </div>
+        <p>© 2025 Escola Secundária Campos Melo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
